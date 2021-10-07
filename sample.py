@@ -18,5 +18,11 @@ class Vensor:
             for i in range(len(self.data)):
                 res.append(self.data[i]+other)
             return Vensor(res)
+    def __mul__(self,other):
+        if(type(other)==type(1)):
+            res = []
+            for i in range(len(self.data)):
+                res.append(self.data[i]*other)
+            return Vensor(res)
     def __repr__(self):
         return f"Vensor({self.data})"
