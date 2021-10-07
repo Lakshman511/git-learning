@@ -19,4 +19,4 @@ class Vensor:
                 res.append(self.data[i]+other)
             return Vensor(res)
     def __repr__(self):
-        return f"Vensor({self.data})"
+        return f"Vensor( {self.data} )"
