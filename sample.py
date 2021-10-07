@@ -8,7 +8,7 @@ class Vensor:
         return self.data[key]
     def __add__(self,other):
         if(type(other)==type(1)):
-            res = []
+            res = list()
             for i in range(len(self.data)):
                 res.append(self.data[i]+other)
             return Vensor(res)
